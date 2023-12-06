@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-test-квартира-e",
+  "editForm": "i-i-s-test-квартира-e",
+  "external": false,
+  "caption": "Квартира",
+  "name": "IISTestКвартираL",
+  "className": "КвартираL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-квартира",
+      "modelProjection": "КвартираL"
+    }
+  ]
+}

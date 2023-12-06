@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Здание",
+      "projection": "ЗданиеL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Квартира",
+  "name": "IISTestКвартираE",
+  "className": "КвартираE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test-квартира",
+      "modelProjection": "КвартираE"
+    }
+  ]
+}

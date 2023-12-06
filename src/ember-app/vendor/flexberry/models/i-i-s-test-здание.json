@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISTestЗдание",
+  "modelName": "i-i-s-test-здание",
+  "className": "Здание",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наимен",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗданиеE",
+      "modelName": "i-i-s-test-здание",
+      "attrs": [
+        {
+          "name": "наимен",
+          "caption": "Наимен",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗданиеL",
+      "modelName": "i-i-s-test-здание",
+      "attrs": [
+        {
+          "name": "наимен",
+          "caption": "Наимен",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

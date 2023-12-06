@@ -1,0 +1,127 @@
+﻿{
+  "name": "IISTestКвартира",
+  "modelName": "i-i-s-test-квартира",
+  "className": "Квартира",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кв",
+      "type": "i-i-s-test-квартиры",
+      "flexberryType": "Квартиры",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "здание",
+      "relatedTo": "i-i-s-test-здание",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КвартираE",
+      "modelName": "i-i-s-test-квартира",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "кв",
+          "caption": "Кв",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наимен",
+          "lookupValueField": "наимен",
+          "relationName": "Здание",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимен",
+              "caption": "Наимен",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Здание",
+          "name": "здание",
+          "relatedTo": "i-i-s-test-здание",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КвартираL",
+      "modelName": "i-i-s-test-квартира",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "кв",
+          "caption": "Кв",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Здание",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимен",
+              "caption": "Наимен",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наимен",
+          "name": "здание",
+          "relatedTo": "i-i-s-test-здание",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

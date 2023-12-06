@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Test",
+  "applicationTitle": "Test",
+  "items": [
+    {
+      "link": null,
+      "menuName": "test",
+      "caption": "Test",
+      "title": "Test",
+      "children": [
+        {
+          "link": "i-i-s-test-здание-l",
+          "menuName": null,
+          "caption": "Здание",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test-квартира-l",
+          "menuName": null,
+          "caption": "Квартира",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
